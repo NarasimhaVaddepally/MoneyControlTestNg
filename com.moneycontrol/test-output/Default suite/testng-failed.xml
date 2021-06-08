@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.moneycontrol.testcase.testcasesTest">
+        <methods>
+          <include name="beforesuite"/>
+          <include name="CloseBrowser"/>
+          <include name="BrowserLaunch"/>
+          <include name="getstockdetails"/>
+        </methods>
+      </class> <!-- com.moneycontrol.testcase.testcasesTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
