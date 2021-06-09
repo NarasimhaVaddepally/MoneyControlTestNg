@@ -1,6 +1,5 @@
 package pages;
 
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -12,10 +11,6 @@ import com.aventstack.extentreports.Status;
 import javautilities.SeleniumUtils;
 import javautilities.Xls_Reader;
 
-
-
-
-
 public class Page1 extends testbase {
 	WebDriver driver;
 
@@ -26,7 +21,7 @@ public class Page1 extends testbase {
 	public void searchstocks(String companyName) {
 
 		try {
-			//extenttest.log(LogStatus.PASS, "Browser is Launched and navigated to URl");
+			
 			driver.findElement(By.xpath("//form[@id='form_topsearch']//input[@id='search_str']")).sendKeys(companyName);	
 			extenttest.log(Status.PASS, "Company Name is entered");
 			WebElement element1 = driver.findElement(By.xpath("//form[@id='form_topsearch']//div[@id='autosuggestlist']//a[contains(text(),'"+companyName+"')]"));			
