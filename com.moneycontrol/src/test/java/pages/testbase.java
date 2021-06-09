@@ -3,8 +3,10 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -55,9 +57,13 @@ public class testbase {
 	
 	@AfterMethod
 	public static void CloseBrowser() {
-		driver.close();
-		extent.flush();
-		System.out.println("closing the Browser");
+		try {
+			driver.close();
+			extent.flush();
+			System.out.println("closing the Browser");
+		} catch (Exception e) {
+			System.out.println("Error message is Closing Browser "+e);
+		}
 	}
 	
 	
