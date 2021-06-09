@@ -58,7 +58,7 @@ public class testbase {
 	@AfterMethod
 	public static void CloseBrowser() {
 		try {
-			driver.close();
+			driver.quit();
 			extent.flush();
 			System.out.println("closing the Browser");
 		} catch (Exception e) {
