@@ -19,7 +19,7 @@ import reportingUtils.ExtentTestManager;
 
 public class testbase {
 	
-	protected static WebDriver driver; 
+	public static WebDriver driver; 
 	protected static ExtentReports extent;
 	public static ExtentTest extenttest;
 	
