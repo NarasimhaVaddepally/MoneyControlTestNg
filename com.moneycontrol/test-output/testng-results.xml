@@ -1,36 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="4" passed="4" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-12T11:13:22Z" name="Suite" finished-at="2021-06-12T11:19:18Z" duration-ms="355786">
+  <suite started-at="2021-06-15T06:13:33Z" name="Default suite" finished-at="2021-06-15T06:16:23Z" duration-ms="170017">
     <groups>
     </groups>
-    <test started-at="2021-06-12T11:13:22Z" name="Test" finished-at="2021-06-12T11:19:18Z" duration-ms="355786">
+    <test started-at="2021-06-15T06:13:33Z" name="Default test" finished-at="2021-06-15T06:16:23Z" duration-ms="170017">
       <class name="com.moneycontrol.testcase.testcasesTest">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:43:21Z" name="beforesuite" finished-at="2021-06-12T16:43:22Z" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:43:32Z" name="beforesuite" finished-at="2021-06-15T11:43:33Z" duration-ms="592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:43:23Z" name="BrowserLaunch" finished-at="2021-06-12T16:44:44Z" duration-ms="80601" status="PASS">
+        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:43:34Z" name="BrowserLaunch" finished-at="2021-06-15T11:44:08Z" duration-ms="34053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLaunch -->
-        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:43:23Z" name="BrowserLaunch" finished-at="2021-06-12T16:45:03Z" duration-ms="100166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserLaunch -->
-        <test-method signature="getstockdetail(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:44:44Z" name="getstockdetail" data-provider="getData" finished-at="2021-06-12T16:45:24Z" duration-ms="40640" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vedanta]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getstockdetail -->
-        <test-method signature="getstockdetails(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:45:03Z" name="getstockdetails" data-provider="getData" finished-at="2021-06-12T16:46:03Z" duration-ms="60038" status="PASS">
+        <test-method signature="getstockdetails(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:44:08Z" name="getstockdetails" data-provider="getData" finished-at="2021-06-15T11:45:01Z" duration-ms="53261" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,23 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstockdetails -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:45:24Z" name="CloseBrowser" finished-at="2021-06-12T16:45:59Z" duration-ms="35277" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:45:01Z" name="CloseBrowser" finished-at="2021-06-15T11:45:03Z" duration-ms="1923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:45:59Z" name="BrowserLaunch" finished-at="2021-06-12T16:48:32Z" duration-ms="152983" status="PASS">
+        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:45:03Z" name="BrowserLaunch" finished-at="2021-06-15T11:45:08Z" duration-ms="4446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLaunch -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:46:03Z" name="CloseBrowser" finished-at="2021-06-12T16:46:03Z" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:46:03Z" name="BrowserLaunch" finished-at="2021-06-12T16:47:53Z" duration-ms="109862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserLaunch -->
-        <test-method signature="getstockdetails(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:47:53Z" name="getstockdetails" data-provider="getData" finished-at="2021-06-12T16:48:38Z" duration-ms="44294" status="PASS">
+        <test-method signature="getstockdetails(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:45:08Z" name="getstockdetails" data-provider="getData" finished-at="2021-06-15T11:46:21Z" duration-ms="73563" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,26 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstockdetails -->
-        <test-method signature="getstockdetail(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:48:32Z" name="getstockdetail" data-provider="getData" finished-at="2021-06-12T16:49:13Z" duration-ms="40675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tata Motors]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getstockdetail -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:48:38Z" name="CloseBrowser" finished-at="2021-06-12T16:49:14Z" duration-ms="36287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@12a94400]" started-at="2021-06-12T16:49:13Z" name="CloseBrowser" finished-at="2021-06-12T16:49:18Z" duration-ms="4448" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@57576994]" started-at="2021-06-15T11:46:21Z" name="CloseBrowser" finished-at="2021-06-15T11:46:23Z" duration-ms="1488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.moneycontrol.testcase.testcasesTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

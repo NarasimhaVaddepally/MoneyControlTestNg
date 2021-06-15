@@ -11,12 +11,14 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+import seleniumutilities.DriverFactory;
+
 
 
 
 public class testbase {
 	
-	public static WebDriver driver; 
+	protected static WebDriver driver; 
 	protected static ExtentReports extent;
 	public static ExtentTest extenttest;
 	private static seleniumutilities.DriverFactory driverFactory;
@@ -44,12 +46,12 @@ public class testbase {
 		configReader = new seleniumutilities.ConfigReader();
 			prop = configReader.init_prop();
 			String browsername = prop.getProperty("browser");
-			driverFactory = new seleniumutilities.DriverFactory();
-			driver = driverFactory.init_driver(browsername);	
+//			driverFactory = new DriverFactory();
+//			driver = driverFactory.init_driver(browsername);	
 			
 			
-//			System.setProperty("webdriver.chrome.driver", "E:\\Projects\\com.moneycontrol\\src\\test\\java\\chromedriver.exe");			  
-//			  driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", "E:\\Projects\\com.moneycontrol\\src\\test\\java\\chromedriver.exe");			  
+			  driver = new ChromeDriver();
 			  driver.manage().deleteAllCookies();			  
 			  driver.manage().window().maximize();
 			  driver.navigate().to("http://moneycontrol.com/");

@@ -8,7 +8,7 @@
           <include name="beforesuite"/>
           <include name="CloseBrowser"/>
           <include name="BrowserLaunch"/>
-          <include name="getstockdetails"/>
+          <include name="getstockdetails" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.moneycontrol.testcase.testcasesTest -->
     </classes>

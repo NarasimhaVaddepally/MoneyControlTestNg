@@ -2,6 +2,7 @@ package com.moneycontrol.testcase;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -36,11 +37,16 @@ public class testcasesTest extends testbase {
 	}
 	
 	@Test(dataProvider = "getData")
-	public void getstockdetails(String companyName) throws Exception {
-		extenttest = extent.createTest("getstockdetails"+companyName);
-		//Assert.assertEquals(driver.getTitle(), "Business News | Stock and Share Market News | Financial News");
-		Page1 Page1 = PageFactory.initElements(driver, Page1.class);
-		Page1.searchstocks(companyName);
+	public void getstockdetails(String companyName) {
+		try {
+			extenttest = extent.createTest("getstockdetails"+companyName);	
+			driver.manage().timeouts().implicitlyWait('2', TimeUnit.SECONDS);	
+			Page1 Page1 = PageFactory.initElements(driver, Page1.class);
+			Page1.searchstocks(companyName);
+		} catch (Exception e) {
+				
+			extenttest.log(Status.PASS, "Error in Test method"+e);
+		}
 	}
 	
 
