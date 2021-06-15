@@ -42,4 +42,6 @@ public class testcasesTest extends testbase {
 		Page1 Page1 = PageFactory.initElements(driver, Page1.class);
 		Page1.searchstocks(companyName);
 	}
+	
+
 }
