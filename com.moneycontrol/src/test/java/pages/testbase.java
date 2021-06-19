@@ -55,6 +55,7 @@ public class testbase {
 			  //ExtentTestManager.getTest().generateLog(Status.PASS, "Browser is launched and navigated to Money Control Website");
 		} catch (Exception e) {
 			System.out.println("Error message is"+e);
+			
 		}
 		  
 		 

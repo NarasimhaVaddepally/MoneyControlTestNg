@@ -21,7 +21,7 @@ public class DriverFactory {
 		System.out.println("Browser valuevis "+browser);
 		
 		if(browser.equals("Chrome")) {
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().driverVersion("91.0.4472.101").setup();
 			
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("start-maximized");
