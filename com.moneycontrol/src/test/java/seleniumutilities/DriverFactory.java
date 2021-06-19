@@ -1,8 +1,12 @@
 package seleniumutilities;
 
+import java.util.Collections;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +22,17 @@ public class DriverFactory {
 		
 		if(browser.equals("Chrome")) {
 			WebDriverManager.chromedriver().setup();
-			tlDriver.set(new ChromeDriver());
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
+			options.addArguments("disable-extensions");
+			options.setExperimentalOption("useAutomationExtension", false);
+			options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+			DesiredCapabilities capabilities =new  DesiredCapabilities();
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);			
+			options.merge(capabilities);			
+			
+			tlDriver.set(new ChromeDriver(options));
 		}
 		else if(browser.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();

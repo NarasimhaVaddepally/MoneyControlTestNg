@@ -9,6 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -17,6 +18,8 @@ import javautilities.datarelatedmethods;
 import pages.Page1;
 import pages.testbase;
 
+@Listeners(seleniumutilities.ListenerTest.class)
+
 public class testcasesTest extends testbase {
 
 	@DataProvider
@@ -24,10 +27,10 @@ public class testcasesTest extends testbase {
 		XSSFWorkbook workbook = datarelatedmethods.readexcel(System.getProperty("user.dir")+"//src//test//resources//TestData.xlsx");
 		XSSFSheet sheet = workbook.getSheet("Company");
 		int count = sheet.getLastRowNum();
-		System.out.println("Numnber of records in test data is "+count); 
+		System.out.println("Numnber of records in test data is "+(count-1)); 
 		
 		ArrayList<Object[]>   abc = new ArrayList<Object[]>();	
-		for(int i=1;i<count+1;i++) {
+		for(int i=1;i<count;i++) {
 			String companyName = sheet.getRow(i).getCell(0).getStringCellValue();			
 			Object ab[] = {companyName};			
 			abc.add(ab);
@@ -39,12 +42,12 @@ public class testcasesTest extends testbase {
 	@Test(dataProvider = "getData")
 	public void getstockdetails(String companyName) {
 		try {
-			extenttest = extent.createTest("getstockdetails"+companyName);	
-			driver.manage().timeouts().implicitlyWait('2', TimeUnit.SECONDS);	
+			extenttest = extent.createTest("getstockdetails"+companyName);				
+			System.out.println(driver.getTitle());
 			Page1 Page1 = PageFactory.initElements(driver, Page1.class);
 			Page1.searchstocks(companyName);
 		} catch (Exception e) {
-				
+			System.out.println(e);
 			extenttest.log(Status.PASS, "Error in Test method"+e);
 		}
 	}

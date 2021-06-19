@@ -18,7 +18,7 @@ import seleniumutilities.DriverFactory;
 
 public class testbase {
 	
-	protected static WebDriver driver; 
+	public static WebDriver driver; 
 	protected static ExtentReports extent;
 	public static ExtentTest extenttest;
 	private static seleniumutilities.DriverFactory driverFactory;
@@ -34,6 +34,7 @@ public class testbase {
 		extent.attachReporter(spark);
 		
 		
+		
 	}
 	
 	 	 	
@@ -46,14 +47,9 @@ public class testbase {
 		configReader = new seleniumutilities.ConfigReader();
 			prop = configReader.init_prop();
 			String browsername = prop.getProperty("browser");
-//			driverFactory = new DriverFactory();
-//			driver = driverFactory.init_driver(browsername);	
-			
-			
-			System.setProperty("webdriver.chrome.driver", "E:\\Projects\\com.moneycontrol\\src\\test\\java\\chromedriver.exe");			  
-			  driver = new ChromeDriver();
-			  driver.manage().deleteAllCookies();			  
-			  driver.manage().window().maximize();
+			driverFactory = new DriverFactory();
+			driver = driverFactory.init_driver(browsername);
+			driver.manage().deleteAllCookies();			  
 			  driver.navigate().to("http://moneycontrol.com/");
 			  System.out.println("Browser is Launched and navigated to URl");
 			  //ExtentTestManager.getTest().generateLog(Status.PASS, "Browser is launched and navigated to Money Control Website");
