@@ -35,7 +35,12 @@ public class DriverFactory {
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);			
 			options.merge(capabilities);			
 			
+			System.setProperty("webdriver.chrome.driver", "E:\\Projects\\com.moneycontrol\\src\\test\\java\\chromedriver.exe");
 			tlDriver.set(new ChromeDriver(options));
+			//driver = webdriver.Chrome(chrome_options = options, executable_path='\\E:\\Projects\\com.moneycontrol\\src\\test\\javachromedriver.exe');
+			
+			
+			//tlDriver.set(new ChromeDriver(options));
 		}
 		else if(browser.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
