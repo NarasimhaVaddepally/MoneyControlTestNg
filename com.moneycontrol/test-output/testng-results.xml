@@ -2,20 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-19T13:40:44Z" name="Default suite" finished-at="2021-06-19T13:43:31Z" duration-ms="167539">
+  <suite started-at="2021-07-18T06:36:41Z" name="Default suite" finished-at="2021-07-18T06:37:42Z" duration-ms="60674">
     <groups>
     </groups>
-    <test started-at="2021-06-19T13:40:44Z" name="Default test" finished-at="2021-06-19T13:43:31Z" duration-ms="167539">
+    <test started-at="2021-07-18T06:36:41Z" name="Default test" finished-at="2021-07-18T06:37:42Z" duration-ms="60674">
       <class name="com.moneycontrol.testcase.testcasesTest">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@2a225dd7]" started-at="2021-06-19T19:10:42Z" name="beforesuite" finished-at="2021-06-19T19:10:44Z" duration-ms="1279" status="PASS">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@61eaec38]" started-at="2021-07-18T12:06:40Z" name="beforesuite" finished-at="2021-07-18T12:06:41Z" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@2a225dd7]" started-at="2021-06-19T19:10:46Z" name="BrowserLaunch" finished-at="2021-06-19T19:11:35Z" duration-ms="48988" status="PASS">
+        <test-method is-config="true" signature="BrowserLaunch()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@61eaec38]" started-at="2021-07-18T12:06:42Z" name="BrowserLaunch" finished-at="2021-07-18T12:07:13Z" duration-ms="31001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLaunch -->
-        <test-method signature="getstockdetails(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@2a225dd7]" started-at="2021-06-19T19:11:35Z" name="getstockdetails" data-provider="getData" finished-at="2021-06-19T19:13:29Z" duration-ms="113960" status="PASS">
+        <test-method signature="getstockdetails(java.lang.String)[pri:0, instance:com.moneycontrol.testcase.testcasesTest@61eaec38]" started-at="2021-07-18T12:07:13Z" name="getstockdetails" data-provider="getData" finished-at="2021-07-18T12:07:39Z" duration-ms="25516" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstockdetails -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@2a225dd7]" started-at="2021-06-19T19:13:29Z" name="CloseBrowser" finished-at="2021-06-19T19:13:31Z" duration-ms="2643" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.moneycontrol.testcase.testcasesTest@61eaec38]" started-at="2021-07-18T12:07:39Z" name="CloseBrowser" finished-at="2021-07-18T12:07:42Z" duration-ms="2789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

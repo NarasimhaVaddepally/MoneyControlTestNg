@@ -24,6 +24,9 @@ public class DriverFactory {
 			WebDriverManager.chromedriver().driverVersion("91.0.4472.101").setup();
 			
 			ChromeOptions options = new ChromeOptions();
+			
+			options.setBinary("C:\\Users\\Narasimha Vaddepally\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			
 			options.addArguments("start-maximized");
 			options.addArguments("disable-extensions");
 			options.setExperimentalOption("useAutomationExtension", false);
